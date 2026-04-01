@@ -24,9 +24,40 @@ status-website:
   introMessage: Real-time uptime monitoring for [uncover.fit](https://uncover.fit). Powered by [Upptime](https://github.com/upptime/upptime) — automated checks every 5 minutes, zero infrastructure.
   navbar:
     - title: Status
-      href: /
+      href: /status
     - title: Website
       href: https://uncover.fit
     - title: GitHub
       href: https://github.com/Uncover-Fitness
-  theme: light
+  theme: dark
+  css: |
+    :root {
+      --body-background-color: #0a0a0a;
+      --body-text-color: #ffffff;
+      --card-background-color: #141414;
+      --nav-background-color: #111111;
+      --nav-border-bottom-color: #222222;
+      --nav-current-border-bottom-color: #6B7280;
+      --card-border-color: #222222;
+      --down-border-left-color: #e74c3c;
+      --down-background-color: #3b1017;
+      --degraded-border-left-color: #f1c40f;
+      --up-border-left-color: #2ecc71;
+      --tag-color: #141414;
+      --tag-up-background-color: #2ecc71;
+      --tag-down-background-color: #e74c3c;
+      --tag-degraded-background-color: #f1c40f;
+      --change-background-color: #f1c40f;
+      --error-button-border-color: #4B5563;
+      --error-button-background-color: #6B7280;
+      --error-button-color: #ffffff;
+      --submit-button-border-color: #4B5563;
+      --submit-button-background-color: #6B7280;
+      --submit-button-color: #ffffff;
+      --graph-opacity: 1;
+      --graph-filter: none;
+    }
+    nav img { border-radius: 8px; }
+    .navbar-brand { font-weight: 700; letter-spacing: -0.02em; }
+    a { color: #9CA3AF; }
+    a:hover { color: #ffffff; }
