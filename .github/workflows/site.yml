@@ -1,0 +1,13 @@
+name: Static Site CI
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+jobs:
+  static-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Upptime Static Site
+        uses: upptime/static-site@v1
+        with:
+          token: ${{ secrets.GH_PAT }}

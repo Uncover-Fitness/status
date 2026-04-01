@@ -1,0 +1,13 @@
+name: Summary CI
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Upptime Summary
+        uses: upptime/summary@v1
+        with:
+          token: ${{ secrets.GH_PAT }}
