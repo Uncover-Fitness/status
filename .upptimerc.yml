@@ -17,15 +17,16 @@ sites:
 
 status-website:
   baseUrl: /status
-  logoUrl: https://raw.githubusercontent.com/Uncover-Fitness/status/main/assets/logo.svg
+  logoUrl: https://raw.githubusercontent.com/Uncover-Fitness/uncover/main/frontend/public/images/logo-3d.png
+  favicon: https://raw.githubusercontent.com/Uncover-Fitness/uncover/main/frontend/public/logo.jpg
   name: Uncover Status
-  introTitle: "**Uncover** service status and uptime monitor"
-  introMessage: Real-time uptime data powered by [Upptime](https://github.com/upptime/upptime). Automated monitoring via GitHub Actions — no server required.
+  introTitle: "**Uncover** — Service Status"
+  introMessage: Real-time uptime monitoring for [uncover.fit](https://uncover.fit). Powered by [Upptime](https://github.com/upptime/upptime) — automated checks every 5 minutes, zero infrastructure.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/Uncover-Fitness/uncover
     - title: Website
       href: https://uncover.fit
+    - title: GitHub
+      href: https://github.com/Uncover-Fitness
   theme: light

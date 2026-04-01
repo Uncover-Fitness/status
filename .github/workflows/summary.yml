@@ -2,12 +2,22 @@ name: Summary CI
 on:
   schedule:
     - cron: "0 0 * * *"
+  repository_dispatch:
+    types: [summary]
   workflow_dispatch:
 jobs:
-  summary:
+  release:
+    name: Generate README
     runs-on: ubuntu-latest
     steps:
-      - name: Run Upptime Summary
-        uses: upptime/summary@v1
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_PAT }}
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GH_PAT || github.token }}
+      - name: Update summary in README
+        uses: upptime/uptime-monitor@v1.41.0
+        with:
+          command: "readme"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT || github.token }}
