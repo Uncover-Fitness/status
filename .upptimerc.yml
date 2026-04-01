@@ -17,8 +17,8 @@ sites:
 
 status-website:
   baseUrl: /status
-  logoUrl: https://raw.githubusercontent.com/Uncover-Fitness/uncover/main/frontend/public/images/logo-3d.png
-  favicon: https://raw.githubusercontent.com/Uncover-Fitness/uncover/main/frontend/public/logo.jpg
+  logoUrl: https://raw.githubusercontent.com/Uncover-Fitness/.github/main/assets/logo-3d.png
+  favicon: https://raw.githubusercontent.com/Uncover-Fitness/.github/main/assets/logo.jpg
   name: Uncover Status
   introTitle: "**Uncover** — Service Status"
   introMessage: Real-time uptime monitoring for [uncover.fit](https://uncover.fit). Powered by [Upptime](https://github.com/upptime/upptime) — automated checks every 5 minutes, zero infrastructure.
