@@ -4,10 +4,10 @@ Automated uptime monitoring and status page for [Uncover](https://uncover.fit), 
 
 ## Monitored Services
 
-| Service | URL |
-|---------|-----|
-| Web App | https://uncover.fit |
-| API | https://uncover-production-2743.up.railway.app/api/v1/health |
+| Service | URL                                                          |
+| ------- | ------------------------------------------------------------ |
+| Web App | https://uncover.fit                                          |
+| API     | https://uncover-production-2743.up.railway.app/api/v1/health |
 
 ## How It Works
 
