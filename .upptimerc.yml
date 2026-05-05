@@ -14,6 +14,14 @@ sites:
     url: https://api.uncover.fit/api/v1/auth/health
     expectedStatusCodes:
       - 200
+  - name: iOS App (App Store)
+    url: https://apps.apple.com/us/app/uncover-one/id6761775323
+    expectedStatusCodes:
+      - 200
+  - name: Android App (Play Store)
+    url: https://play.google.com/store/apps/details?id=fit.uncover.one
+    expectedStatusCodes:
+      - 200
 
 status-website:
   baseUrl: /status
